@@ -14,14 +14,13 @@ module.exports = {
         f_text_color : "#0466c8"
       },
       spacing:{
+        350: "350px",
         500: "500px",
         700: "700px",
         800: "800px"
       },
       screens:{
-        'sm' : '640px',
-        'lg' : '1024px',
-        'xl' : '1220px'
+        'xsm' : {'max' : '640px'},
       }
     },
   },

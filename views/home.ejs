@@ -13,15 +13,16 @@
 </head>
 
 <body class="font-sans m-0 p-0 cursor-default">
-    <nav class="h-20 text-xl flex justify-around items-center bg-skyblue">
-        <div class="logo">
+    <nav class="h-20 text-xl flex justify-around items-center 
+    bg-skyblue xsm:grid xsm:grid-cols-2 xsm:h-32">
+        <div class="logo xsm:ml-6">
             <!-- <span class="material-symbols-sharp">
                 home_pin
                 </span> -->
             <img src="/assests/home-pin.svg" alt="">
         </div>
-        <div class="mid-nav bg-gcolor rounded-full w-1/3 text-center flex justify-center items-center h-14">
-            <ul class="flex space-x-5">
+        <div class="mid-nav bg-gcolor rounded-full w-1/3 text-center flex justify-center items-center h-14 xsm:order-3 xsm:col-span-2 xsm:w-screen">
+            <ul class="flex space-x-5 xsm:space-x-2">
                 <li><a class="hover:text-f_text_color" href="">Home</a></li>
                 <li><a class="hover:text-f_text_color" href="">Properties</a></li>
                 <li><a class="hover:text-f_text_color" href="">Service</a></li>
@@ -29,7 +30,7 @@
                 <li><a class="hover:text-f_text_color" href="">Contact</a></li>
             </ul>
         </div>
-        <div class="btn">
+        <div class="btn xsm:flex xsm:mr-6 xsm:justify-end">
             <button class="flex items-center"><img src="/assests/person.svg" alt="account">sign in</button>
         </div>
         </div>
@@ -37,76 +38,83 @@
 
     <main>
         <section class="#home bg-skyblue relative">
-            <div class="flex justify-between items-center">
-                <div class="text ml-20 max-w-96">
+            <div class="flex justify-between items-center xsm:grid xsm:grid-cols-1">
+                <div class="text ml-20 max-w-96 xsm:m-10">
                     <div class="title text-4xl font-extrabold max-w-72">
                         LOCATE YOUR DREAM HOME
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique possimus incidunt magni optio
                         quos nobis numquam vero quia voluptatem voluptatum.</p>
-
-                    <button class="bg-btncolor text-white w-48 h-12 rounded-full mt-12">Explore</button>
+                    <div class="xsm:flex xsm:justify-center xsm:mb-4"> 
+                    <button class="bg-btncolor text-white w-48 h-12 rounded-full mt-12">Explore</button></div>
                 </div>
-                <div class="img w-1/2">
+                <div class="img w-1/2 xsm:order-first xsm:w-screen">
                     <img src="/assests/house-5.png" alt="">
                 </div>
             </div>
             <div
-                class="icon-list absolute flex justify-around w-9/12 bg-gcolor -bottom-11 ml-40 rounded-full h-20 items-center child:grid child:justify-items-center child:hover:cursor-pointer">
+                class="icon-list absolute flex justify-around w-9/12 bg-gcolor -bottom-11 ml-40 rounded-full h-20 items-center child:grid child:justify-items-center child:hover:cursor-pointer xsm:w-screen xsm:m-0 xsm:p-4">
                 <div>
-                <div class="bg-blue-200 text-center h-10 w-10 rounded-full">
-                    <span class="material-symbols-sharp p-2 text-blue-600">
-                        home_work
-                    </span></div>
-                    <p>All</p>
+                    <div class="bg-blue-200 text-center h-10 w-10 rounded-full xsm:w-8 xsm:h-8">
+                        <span class="material-symbols-sharp p-2 text-blue-600 xsm:p-1">
+                            home_work
+                        </span>
+                    </div>
+                    <p class="xsm:text-xs">All</p>
                 </div>
                 <div>
-                <div class="bg-purple-200 text-center h-10 w-10 rounded-full">
-                    <span class="material-symbols-sharp p-2 text-purple-600">
-                        distance
-                    </span></div>
-                    <p>Landlots</p>
+                    <div class="bg-purple-200 text-center h-10 w-10 rounded-full xsm:w-8 xsm:h-8">
+                        <span class="material-symbols-sharp p-2 text-purple-600 xsm:p-1">
+                            distance
+                        </span>
+                    </div>
+                    <p class="xsm:text-xs">Landlots</p>
                 </div>
                 <div>
-                <div class="bg-orange-200 text-center h-10 w-10 rounded-full">
-                    <span class="material-symbols-sharp p-2 text-orange-600">
-                        location_city
-                    </span></div>
-                    <p>Office</p>
+                    <div class="bg-orange-200 text-center h-10 w-10 rounded-full xsm:w-8 xsm:h-8">
+                        <span class="material-symbols-sharp p-2 text-orange-600 xsm:p-1">
+                            location_city
+                        </span>
+                    </div>
+                    <p class="xsm:text-xs">Office</p>
                 </div>
                 <div>
-                <div class="bg-green-200 text-center h-10 w-10 rounded-full">
-                    <span class="material-symbols-sharp p-2 text-green-400">
-                        storefront
-                    </span></div>
-                    <p>Shop</p>
+                    <div class="bg-green-200 text-center h-10 w-10 rounded-full xsm:w-8 xsm:h-8">
+                        <span class="material-symbols-sharp p-2 text-green-400 xsm:p-1">
+                            storefront
+                        </span>
+                    </div>
+                    <p class="xsm:text-xs">Shop</p>
                 </div>
                 <div>
-                <div class="bg-pink-200 text-center h-10 w-10 rounded-full">   
-                    <span class="material-symbols-sharp p-2  text-pink-600">
-                        apartment
-                    </span></div>
-                    <p>Apartment</p>
+                    <div class="bg-pink-200 text-center h-10 w-10 rounded-full xsm:w-8 xsm:h-8">
+                        <span class="material-symbols-sharp p-2  text-pink-600 xsm:p-1">
+                            apartment
+                        </span>
+                    </div>
+                    <p class="xsm:text-xs">Apartment</p>
                 </div>
                 <div>
-                <div class="bg-amber-200 text-center h-10 w-10 rounded-full">
-                    <span class="material-symbols-sharp p-2 text-amber-600">
-                        villa
-                    </span></div>
-                    <p>Villa</p>
+                    <div class="bg-amber-200 text-center h-10 w-10 rounded-full xsm:w-8 xsm:h-8">
+                        <span class="material-symbols-sharp p-2 text-amber-600 xsm:p-1">
+                            villa
+                        </span>
+                    </div>
+                    <p class="xsm:text-xs">Villa</p>
                 </div>
                 <div>
-                <div class="bg-green-200 text-center h-10 w-10 rounded-full">
-                    <span class="material-symbols-sharp p-2 text-green-600">
-                        home
-                    </span></div>
-                    <p>House</p>
+                    <div class="bg-green-200 text-center h-10 w-10 rounded-full xsm:w-8 xsm:h-8">
+                        <span class="material-symbols-sharp p-2 text-green-600 xsm:p-1">
+                            home
+                        </span>
+                    </div>
+                    <p class="xsm:text-xs">House</p>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="flex  mt-16">
-                <div class="images flex w-800 ml-60">
+        <section class="xsm:w-screen">
+            <div class="flex  mt-16 xsm:grid xsm:grid-cols-1">
+                <div class="images flex w-800 ml-60 xsm:p-2 xsm:m-0 xsm:w-screen">
                     <div
                         class="bg-[url('/assests/house-3.jpg')] bg-cover bg-center w-32 h-500 rounded-2xl border-gcolor border-2 transition-all ease-out hover:w-500 cursor-pointer">
                     </div>
@@ -117,8 +125,8 @@
                         class="bg-[url('/assests/house-2.jpg')] bg-cover bg-center w-32 h-500 rounded-2xl border-gcolor border-2 transition-all ease-out hover:w-500 cursor-pointer">
                     </div>
                 </div>
-                <div class="w-500 text p-20">
-                    <h1 class="text-4xl font-extrabold max-w-72">ELEGENT HOUSE</h1>
+                <div class="w-500 text p-20 xsm:w-screen xsm:p-4">
+                    <h1 class="text-4xl font-extrabold max-w-72 xsm:text-3xl">ELEGENT HOUSE</h1>
                     <div class="specs flex">
                         <div class="flex justify-items-center">
                             <div class="bg-gcolor mr-1 w-8 h-7 p-0.5 text-center rounded-lg"><span
@@ -143,34 +151,36 @@
                         itaque consequuntur enim? Veritatis, qui! Amet, molestiae modi! Beatae, iure quia unde vero
                         magnam id enim asperiores itaque saepe quibusdam deserunt illo autem officia iste, rem modi
                         voluptatum fuga, architecto distinctio quod.</p>
-                    <button class="bg-btncolor text-white w-48 h-12 rounded-full mt-12">View Details</button>
+                        <div class="xsm:flex xsm:justify-center xsm:mb-4">
+                    <button class="bg-btncolor text-white w-48 h-12 rounded-full mt-12">View Details</button></div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="container flex justify-around">
-                <div class="w-500 text p-20">
-                    <h1 class="text-4xl font-extrabold max-w-72">BEST APARTMENTS NEAR YOU</h1>
+            <div class="container flex justify-around xsm:grid xsm:grid-cols-1">
+                <div class="w-500 text p-20 xsm:w-screen xsm:p-4">
+                    <h1 class="text-4xl font-extrabold max-w-72 xsm:text-3xl">BEST APARTMENTS NEAR YOU</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias consequatur in odit beatae
                         itaque consequuntur enim? Veritatis, qui! Amet, molestiae modi! Beatae, iure quia unde vero
                         magnam id enim asperiores itaque saepe quibusdam deserunt illo autem officia iste, rem modi
                         voluptatum fuga, architecto distinctio quod.</p>
-                    <button class="bg-btncolor text-white w-48 h-12 rounded-full mt-12">Explore</button>
+                        <div class="xsm:flex xsm:justify-center xsm:mb-4">
+                    <button class="bg-btncolor text-white w-48 h-12 rounded-full mt-12">Explore</button></div>
                 </div>
-                <div class="images flex justify-center">
+                <div class="images flex justify-center xsm:order-first xsm:w-screen">
                     <img class="w-500" src="/assests/house-6.jpg" alt="">
                 </div>
             </div>
         </section>
-        <section>
+        <section id="popular">
             <div class="heading text-center text-5xl mt-8 p-10 font-extrabold">
                 POPULAR
             </div>
-            <div class="flex ml-40 items-center">
-                <div class="house-cards grid grid-cols-2 gap-8">
-                    <div class="card hover:cursor-pointer">
+            <div class="flex items-center justify-around xsm:grid xsm:w-screen">
+                <div class="house-cards grid grid-cols-2 gap-8 xsm:grid-cols-1">
+                    <div class="card hover:cursor-pointer xsm:p-5">
                         <img class="w-96 h-64 rounded-2xl" src="/assests/house-4.jpg" alt="">
-                        <h1 class="text-3xl font-extrabold">$12,000</h1>
+                        <h1 class="text-3xl font-extrabold">$100,000</h1>
                         <p>Lorem ipsum dolor</p>
                         <div class="specs flex">
                             <div class="flex justify-items-center">
@@ -193,9 +203,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card hover:cursor-pointer">
+                    <div class="card hover:cursor-pointer xsm:p-5">
                         <img class="w-96 h-64 rounded-2xl" src="/assests/house-7.jpg" alt="">
-                        <h1 class="text-3xl font-extrabold">$12,000</h1>
+                        <h1 class="text-3xl font-extrabold">$100,000</h1>
                         <p>Lorem ipsum dolor</p>
                         <div class="specs flex">
                             <div class="flex justify-items-center">
@@ -218,9 +228,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card hover:cursor-pointer">
+                    <div class="card hover:cursor-pointer xsm:p-5">
                         <img class="w-96 h-64 rounded-2xl" src="/assests/house-8.jpg" alt="">
-                        <h1 class="text-3xl font-extrabold">$12,000</h1>
+                        <h1 class="text-3xl font-extrabold">$100,000</h1>
                         <p>Lorem ipsum dolor</p>
                         <div class="specs flex">
                             <div class="flex justify-items-center">
@@ -243,9 +253,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card hover:cursor-pointer">
+                    <div class="card hover:cursor-pointer xsm:p-5">
                         <img class="w-96 h-64 rounded-2xl" src="/assests/house-9.jpg" alt="">
-                        <h1 class="text-3xl font-extrabold">$12,000</h1>
+                        <h1 class="text-3xl font-extrabold">$100,000</h1>
                         <p>Lorem ipsum dolor</p>
                         <div class="specs flex">
                             <div class="flex justify-items-center">
@@ -269,24 +279,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="right-card ml-20 w-80 h-screen bg-skyblue rounded-xl">
+                <div class="right-card ml-20 w-80 h-screen bg-skyblue rounded-xl xsm:m-5">
                     <h1 class="text-4xl font-bold p-8">THE MOST INTERESTING UNUSUAL AND NEW OFFERS.</h1>
                     <P class="pl-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, veniam.</P>
                     <form class="p-8" action="">
-                        <input class="bg-transparent border-slate w-64 h-9 border-2 mt-40 rounded-full text-left p-4 placeholder:text-black"
+                        <input
+                            class="bg-transparent border-slate w-64 h-9 border-2 mt-40 rounded-full text-left p-4 placeholder:text-black"
                             type="email" placeholder="Email address" name="mail" required>
 
-                        <input class="bg-white w-64 h-9 mt-3 rounded-full cursor-pointer" type="submit" value="Subscribe">
+                        <input class="bg-white w-64 h-9 mt-3 rounded-full cursor-pointer" type="submit"
+                            value="Subscribe">
 
                     </form>
                 </div>
             </div>
         </section>
-        <section class="bg-t_bg_color">
+        <section id="testimonial" class="bg-t_bg_color">
             <div class="heading text-center text-5xl mt-20 pt-20 font-extrabold ">
                 TESTIMONIALS
             </div>
-            <div class="ml-20 max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-12">
+            <div class="ml-20 max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-12 xsm:m-8">
                 <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
                     <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
                         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -319,7 +331,7 @@
                         </div>
                     </div>
 
-                    <div class="-mx-6 lg:col-span-2 lg:mx-0">
+                    <div class="-mx-6 lg:col-span-2 lg:mx-0 xsm:w-80">
                         <div id="keen-slider" class="keen-slider">
                             <div class="keen-slider__slide">
                                 <blockquote
@@ -361,7 +373,11 @@
                                             <p class="text-2xl font-bold text-black sm:text-3xl">Awesome</p>
 
                                             <p class="mt-4 leading-relaxed text-gray-700">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, aperiam ipsam eos blanditiis iure aliquid molestias possimus atque. Dolorem molestias, vel eius inventore dolor quasi quod nostrum quidem ex esse ipsa velit saepe fugit vero quos recusandae ullam. Fugiat, dolores nihil. Recusandae unde adipisci ducimus?
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+                                                aperiam ipsam eos blanditiis iure aliquid molestias possimus atque.
+                                                Dolorem molestias, vel eius inventore dolor quasi quod nostrum quidem ex
+                                                esse ipsa velit saepe fugit vero quos recusandae ullam. Fugiat, dolores
+                                                nihil. Recusandae unde adipisci ducimus?
                                             </p>
                                         </div>
                                     </div>
@@ -412,7 +428,11 @@
                                             <p class="text-2xl font-bold text-black sm:text-3xl">Awesome</p>
 
                                             <p class="mt-4 leading-relaxed text-gray-700">
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam qui ratione ad et consequuntur fugiat quisquam ex minima, vitae maiores assumenda ducimus provident dolorem, quaerat quae, error dolorum perspiciatis hic! Eius, voluptatum commodi! Dolorem explicabo sint tempore harum deleniti repellendus sequi asperiores est ex ab.
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam qui
+                                                ratione ad et consequuntur fugiat quisquam ex minima, vitae maiores
+                                                assumenda ducimus provident dolorem, quaerat quae, error dolorum
+                                                perspiciatis hic! Eius, voluptatum commodi! Dolorem explicabo sint
+                                                tempore harum deleniti repellendus sequi asperiores est ex ab.
                                             </p>
                                         </div>
                                     </div>
@@ -463,7 +483,11 @@
                                             <p class="text-2xl font-bold text-black sm:text-3xl">Awesome</p>
 
                                             <p class="mt-4 leading-relaxed text-gray-700">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quos temporibus eos delectus dolorum, veniam quidem nisi vel sint sequi numquam ad, quod consequatur rerum commodi dolore. Voluptatibus nihil, omnis voluptates magni obcaecati totam error aperiam hic delectus? Animi ipsam perferendis quae possimus natus odio.
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quos
+                                                temporibus eos delectus dolorum, veniam quidem nisi vel sint sequi
+                                                numquam ad, quod consequatur rerum commodi dolore. Voluptatibus nihil,
+                                                omnis voluptates magni obcaecati totam error aperiam hic delectus? Animi
+                                                ipsam perferendis quae possimus natus odio.
                                             </p>
                                         </div>
                                     </div>
@@ -498,11 +522,15 @@
         </section>
     </main>
     <footer>
-        <div class="foot grid grid-cols-4 gap-12 p-12">
+        <div class="foot grid grid-cols-4 gap-12 p-12 xsm:grid-cols-1">
             <div>
                 <ul>
                     <li class="h-12"><img src="/assests/home-pin.svg" alt="logo"></li>
-                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, id, accusamus consectetur magni ex cum, minus impedit totam itaque corrupti perspiciatis fuga molestiae! Distinctio architecto, dolores velit recusandae in cupiditate quis quos explicabo unde soluta ipsa impedit exercitationem qui error placeat commodi? Ratione est natus ipsum unde numquam consectetur quasi.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, id, accusamus consectetur
+                        magni ex cum, minus impedit totam itaque corrupti perspiciatis fuga molestiae! Distinctio
+                        architecto, dolores velit recusandae in cupiditate quis quos explicabo unde soluta ipsa impedit
+                        exercitationem qui error placeat commodi? Ratione est natus ipsum unde numquam consectetur
+                        quasi.</li>
                 </ul>
             </div>
             <div>
