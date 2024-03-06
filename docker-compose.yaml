@@ -1,0 +1,8 @@
+services:
+  real-estate-website:
+    build: .
+    container_name: realestate_c
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
